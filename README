@@ -1,0 +1,13 @@
+This repository should reside inside ~/.vim
+
+Make sure to symlink the vimrc and gvimrc files to your home directory
+
+then run
+cd && ln -s .vimrc .vim/vimrc && ln -s .gvimrc .vim/gvimrc
+
+or if you want to continue having your own vimrc file add
+source $HOME/.vim/vimrc
+to the end of .vimrc
+and add
+source $HOME/.vim/gvimrc
+to the end of .gvimrc
