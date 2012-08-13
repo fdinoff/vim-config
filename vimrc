@@ -10,6 +10,8 @@ set shiftwidth=4
 set ts=4
 set expandtab
 
+set linebreak " (lbr) wrap long lines at a space instead of in the middle of a word
+
 "set exrc            " enable per-directory .vimrc files
 "set secure          " disable unsafe commands in local .vimrc files
 
