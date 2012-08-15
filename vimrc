@@ -2,6 +2,8 @@ set nocompatible
 let mapleader=","
 filetype plugin indent on
 "colorscheme desert
+"colorscheme redblack
+"colorscheme darkbone
 
 set mouse=a " use mouse in vim
 
@@ -158,3 +160,5 @@ autocmd BufEnter ?akefile* set noet ts=8 sw=8 nocindent
 
 " remap accidental Shifts
 command Wq wq 
+
+colorscheme darkbone

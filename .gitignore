@@ -7,3 +7,4 @@ compiler/
 eclim/
 src/
 vimundo/
+*.swp
