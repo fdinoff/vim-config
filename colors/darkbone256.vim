@@ -11,7 +11,8 @@ endif
 let g:colors_name = 'darkbone256'
 "default colors
 hi Normal 	guifg=#a0a0c0 ctermfg=248 guibg=#000000 ctermbg=0
-hi NonText 	guifg=#606080 ctermfg=60 guibg=#101020 ctermbg=233 gui=none
+"hi NonText 	guifg=#606080 ctermfg=60 guibg=#101020 ctermbg=233 gui=none
+hi NonText 	guifg=#606080 ctermfg=60 guibg=#000000 ctermbg=000 gui=none
 hi SpecialKey 	guifg=#404060 ctermfg=239
 hi Cursor 	guifg=#000000 ctermfg=0 guibg=#a0a0c0 ctermbg=248
 hi CursorLine	guibg=#303050 ctermbg=237
