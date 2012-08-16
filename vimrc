@@ -161,4 +161,4 @@ autocmd BufEnter ?akefile* set noet ts=8 sw=8 nocindent
 " remap accidental Shifts
 command Wq wq 
 
-colorscheme darkbone
+colorscheme darkbone256
