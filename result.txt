@@ -1,0 +1,108 @@
+
+
+--- Options ---
+noautochdir         noexrc                magic               shell=/bin/bash     timeout
+  autoindent          fileformat=unix     makeef=             shellcmdflag=-c     timeoutlen=1000
+noautoread            filetype=           makeprg=make        shellquote=       notitle
+noautowrite           foldclose=          matchtime=5         shelltemp           titlelen=85
+noautowriteall        foldcolumn=0        maxfuncdepth=100    shellxquote=        titlestring=
+  background=dark     foldenable          maxmapdepth=1000  noshiftround        nottimeout
+  backup              foldexpr=0          maxmem=829454       shiftwidth=4        ttimeoutlen=-1
+  backupcopy=auto     foldignore=#        maxmemtot=829454  noshortname           ttybuiltin
+  backupext=~         foldlevel=0         menuitems=25        showbreak=          ttyfast
+nobinary              foldlevelstart=-1   modeline          noshowcmd             ttymouse=xterm2
+  bufhidden=          foldmethod=manual   modelines=5       noshowfulltag         ttyscroll=999
+  buflisted           foldminlines=1      modifiable          showmatch           undofile
+  buftype=            foldnestmax=20    nomodified            showmode            undolevels=1000
+  cdpath=,,           formatexpr=         more                showtabline=1       undoreload=10000
+  cedit=^F            formatoptions=tcq   mouse=a             sidescroll=0        updatecount=200
+nocindent             formatprg=          mousetime=500       sidescrolloff=0     updatetime=4000
+  cinoptions=         fsync             nonumber              smartcase           verbose=0
+  clipboard=        nogdefault            numberwidth=4     nosmartindent         verbosefile=
+  cmdheight=1         helpheight=20       omnifunc=         nosmarttab            virtualedit=
+  cmdwinheight=7      helplang=en         operatorfunc=       softtabstop=4     novisualbell
+  colorcolumn=      nohidden            nopaste               spell               warn
+  columns=108         history=20          pastetoggle=        spelllang=en      noweirdinvert
+nocompatible          hlsearch            patchexpr=          spellsuggest=best   whichwrap=b,s
+  completefunc=     noicon                patchmode=        nosplitbelow          wildchar=<Tab>
+noconfirm             iconstring=       nopreserveindent    nosplitright          wildcharm=0
+nocopyindent          ignorecase          previewheight=12    startofline         wildignore=
+  cpoptions=aABceFs   iminsert=0        nopreviewwindow       statusline=       nowildmenu
+  cryptmethod=zip     imsearch=0          printdevice=        suffixesadd=        wildmode=full
+nocursorbind          includeexpr=        printencoding=      swapfile            wildoptions=
+nocursorcolumn        incsearch           printfont=courier   swapsync=fsync      window=29
+nocursorline          indentexpr=         printoptions=       switchbuf=          winheight=1
+  debug=            noinfercase           prompt              synmaxcol=3000    nowinfixheight
+  dictionary=       noinsertmode          pumheight=0         syntax=           nowinfixwidth
+nodiff                isprint=@,161-255   quoteescape=\       tabline=            winminheight=1
+  diffexpr=           joinspaces        noreadonly            tabpagemax=10       winminwidth=1
+  diffopt=filler      key=                redrawtime=2000     tabstop=4           winwidth=20
+nodigraph             keymodel=           relativenumber      tagbsearch          wrap
+  display=            keywordprg=man -s   remap               taglength=0         wrapmargin=0
+  eadirection=both    langmenu=           report=2            tagrelative         wrapscan
+noedcompatible        laststatus=1        ruler               tags=./tags,tags    write
+  endofline         nolazyredraw          rulerformat=        tagstack          nowriteany
+  equalalways         linebreak           scroll=14         noterse               writebackup
+  equalprg=           lines=30          noscrollbind          textauto            writedelay=0
+noerrorbells        nolisp                scrolljump=1      notextmode
+  esckeys           nolist                scrolloff=10        textwidth=0
+  eventignore=        listchars=eol:$   nosecure              thesaurus=
+  expandtab           loadplugins         selectmode=       notildeop
+  backspace=indent,eol,start
+  backupdir=~/.vim/backup
+  backupskip=/tmp/*,/var/folders/dN/dNlYG6v8GQiH4+EKPgdWYk+++TI/-Tmp-/*
+  breakat= ^I!@*-+;:,./?
+  cinkeys=0{,0},0),:,0#,!^F,o,O,e
+  cinwords=if,else,while,do,for,switch
+  comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+  commentstring=/*%s*/
+  complete=.,w,b,u,t,i
+  completeopt=menu,preview
+  define=^\s*#\s*define
+  directory=.,~/tmp,/var/tmp,/tmp
+  errorfile=errors.err
+  errorformat=%*[^"]"%f"%*\D%l: %m,"%f"%*\D%l: %m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c,%-GIn file included from %f:%l,%-Gfrom %f:%l:%c,%-Gfrom %f:%l,%f:%l:%c:%m,%f(%l):%m,%f:%l:%m,"%f"\, line %l%*\D%c%*[^ ] %m,%D%*\a[%*\d]: Entering directory `%f',%X%*\a[%*\d]: Leaving directory `%f',%D%*\a: Entering directory `%f',%X%*\a: Leaving directory `%f',%DMaking %*\a in %f,%f|%l| %m
+  fileformats=unix,dos
+  fillchars=vert:|,fold:-
+  foldmarker={{{,}}}
+  foldopen=block,hor,mark,percent,quickfix,search,tag,undo
+  foldtext=foldtext()
+  formatlistpat=^\s*\d\+[\]:.)}\t ]\s*
+  grepformat=%f:%l:%m,%f:%l%m,%f  %l%m
+  grepprg=grep -n $* /dev/null
+  guicursor=n-v-c:block,o:hor50,i-ci:hor15,r-cr:hor30,sm:block
+  helpfile=/usr/local/share/vim/runtime/doc/help.txt
+  highlight=8:SpecialKey,@:NonText,d:Directory,e:ErrorMsg,i:IncSearch,l:Search,m:MoreMsg,M:ModeMsg,n:LineNr,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title,v:Visual,V:VisualNOS,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn,A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal,B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel,x:PmenuSbar,X:PmenuThumb,*:TabLine,#:TabLineSel,_:TabLineFill,!:CursorColumn,.:CursorLine,o:ColorColumn
+  include=^\s*#\s*include
+  indentkeys=0{,0},:,0#,!^F,o,O,e
+  isfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=
+  isident=@,48-57,_,192-255
+  iskeyword=@,48-57,_,192-255
+  lispwords=defun,define,defmacro,set!,lambda,if,case,let,flet,let*,letrec,do,do*,define-syntax,let-syntax,letrec-syntax,destructuring-bind,defpackage,defparameter,defstruct,deftype,defvar,do-all-symbols,do-external-symbols,do-symbols,dolist,dotimes,ecase,etypecase,eval-when,labels,macrolet,multiple-value-bind,multiple-value-call,multiple-value-prog1,multiple-value-setq,prog1,progv,typecase,unless,unwind-protect,when,with-input-from-string,with-open-file,with-open-stream,with-output-to-string,with-package-iterator,define-condition,handler-bind,handler-case,restart-bind,restart-case,with-simple-restart,store-value,use-value,muffle-warning,abort,continue,with-slots,with-slots*,with-accessors,with-accessors*,defclass,defmethod,print-unreadable-object
+  matchpairs=(:),{:},[:]
+  maxmempattern=1000
+  mkspellmem=460000,2000,500
+  mousemodel=popup_setpos
+  nrformats=octal,hex
+  paragraphs=IPLPPPQPP TPHPLIPpLpItpplpipbp
+  path=.,/usr/include,,
+  printexpr=system('lpr' . (&printdevice == '' ? '' : ' -P' . &printdevice) . ' ' . v:fname_in) . delete(v:fname_in) + v:shell_error
+  printheader=%<%f%h%m%=Page %N
+  runtimepath=~/.vim,/usr/local/share/vim/vimfiles,/usr/local/share/vim/runtime,/usr/local/share/vim/vimfiles/after,~/.vim/after,~/.vim/eclim,~/.vim/eclim/after
+  scrollopt=ver,jump
+  sections=SHNHH HUnhsh
+  selection=inclusive
+  sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize
+  shellpipe=2>&1| tee
+  shellredir=>%s 2>&1
+  shortmess=filnxtToO
+  spellcapcheck=[.?!]\_[\])'"^I ]\+
+  spellfile=~/.vim/dict.add
+  suffixes=.bak,~,.o,.h,.info,.swp,.obj
+  term=xterm-256color
+  titleold=Thanks for flying Vim
+  ttytype=xterm-256color
+  undodir=~/.vim/vimundo
+  viewdir=~/.vim/view
+  viewoptions=folds,options,cursor
+  viminfo='100,<50,s10,h
