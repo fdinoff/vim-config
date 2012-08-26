@@ -27,10 +27,6 @@ set showmatch
 set hlsearch
 nnoremap <leader>h :set hlsearch!<CR>
 
-set relativenumber
-highlight LineNr term=NONE cterm=NONE ctermfg=darkgreen ctermbg=NONE gui=NONE guifg=green guibg=NONE
-highlight Comment term=NONE cterm=NONE ctermfg=darkcyan gui=NONE guifg=NONE guibg=NONE
-
 set ruler
 
 set spell
@@ -42,21 +38,27 @@ hi SpellCap cterm=underline ctermfg=blue
 hi SpellRare cterm=underline ctermfg=blue
 set spellfile+=$HOME/.vim/dict.add
 
-set undofile "available only in vim 7.3
-set undodir=$HOME/.vim/vimundo
+if version >= 703
+    "available only in vim 7.3
+    set relativenumber
+    nnoremap <leader>r :set relativenumber!<CR>
 
-set backup
-set backupdir=$HOME/.vim/backup
+    set undofile
+    set undodir=$HOME/.vim/vimundo
+
+    set backup
+    set backupdir=$HOME/.vim/backup//
+endif
+
 set directory=$HOME/.vim/vimswp//,$HOME/tmp//,/var/tmp//,/tmp//,.
 
 set scrolloff=10
-let java_allow_cpp_keywords = 1 
+let java_allow_cpp_keywords = 1
 "let java_highlight_functions="style"
 "let java_highlight_debug=1
 hi javaParen ctermfg=blue guifg=#0000ff
 hi javaParen1 ctermfg=cyan guifg=#0000ff
 hi javaParen2 ctermfg=white guifg=#0000ff
-
 
 "nnoremap <D-/> 0i//<ESC>
 "nnoremap <LEFT> %
@@ -78,7 +80,7 @@ vnoremap <TAB> >
 vnoremap <S-TAB> <
 
 "reformat block to text width
-noremap <Leader>w gqap 
+noremap <Leader>w gqap
 
 set backspace=indent,eol,start
 
@@ -91,10 +93,7 @@ autocmd FileType java iabbrev psvm public static void main(String[] args){<CR><C
 autocmd FileType java iabbrev pritnln println
 autocmd FileType java,c iabbrev defualt default
 nnoremap <leader>a i/**<CR><SPACE>*<SPACE>Author<SPACE>Frank<SPACE>Dinoff<CR>*/<CR><BACKSPACE>
-nnoremap <leader>r :set relativenumber!<CR>
 
-hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 nnoremap <Leader>z :set spell!<CR> :if exists("g:syntax_on") <BAR> syntax off <BAR> else <BAR> syntax enable <BAR> endif <CR>
 
@@ -141,7 +140,7 @@ autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-]>"
 "autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-u>"
 "autocmd FileType java let g:SuperTabDefaultCompletionType = "context"
 "autocmd FileType java set tags=$HOME/.vim/.tags
-"autocmd Filetype java setlocal omnifunc=javacomplete#Complete 
+"autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 "autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
 
 
@@ -160,6 +159,27 @@ autocmd BufEnter ?akefile* set noet ts=8 sw=8 nocindent
 "set textwidth=80
 
 " remap accidental Shifts
-command Wq wq 
+command Wq wq
 
 colorscheme darkbone256
+
+if has("macunix")
+    " yank to mac clipboard (for copy and paste)
+    nnoremap yy "*yy
+    vnoremap y "*y
+elseif has("unix")
+    " yank to linux clipboard (untested) (need to check register)
+    nnoremap yy "+yy
+    vnoremap y "+y
+endif
+" this moves all changes to mac clipboard
+" I feel it does too much
+" set clipboard=unnamed
+
+function MyBufEnter()
+    " don't (re)store filepos for git commit message files
+    if &filetype == "gitcommit"
+        call setpos('.', [0, 1, 1, 0])
+    endif
+endfunction
+au BufEnter * call MyBufEnter()
