@@ -47,6 +47,7 @@ set undodir=$HOME/.vim/vimundo
 
 set backup
 set backupdir=$HOME/.vim/backup
+set directory=$HOME/.vim/vimswp//,$HOME/tmp//,/var/tmp//,/tmp//,.
 
 set scrolloff=10
 let java_allow_cpp_keywords = 1 

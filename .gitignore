@@ -2,9 +2,7 @@
 .VimballRecord
 .netrwhist
 .tags
-backup/
 compiler/
 eclim/
 src/
-vimundo/
 *.swp

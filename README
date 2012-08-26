@@ -11,3 +11,6 @@ to the end of .vimrc
 and add
 source $HOME/.vim/gvimrc
 to the end of .gvimrc
+
+vimundo, vimswp, and backup are empty directories. These directories will
+fill up with undo history files, swp files and backup files.
