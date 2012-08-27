@@ -47,6 +47,7 @@ if version >= 703
 
     set undofile
     set undodir=$HOME/.vim/vimundo
+    set history=500
 
     set backup
     set backupdir=$HOME/.vim/backup//
