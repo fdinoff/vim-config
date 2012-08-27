@@ -55,7 +55,7 @@ endif
 
 set directory=$HOME/.vim/vimswp//,$HOME/tmp//,/var/tmp//,/tmp//,.
 
-set scrolloff=10
+set scrolloff=3
 let java_allow_cpp_keywords = 1
 "let java_highlight_functions="style"
 "let java_highlight_debug=1
