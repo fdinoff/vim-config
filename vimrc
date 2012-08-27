@@ -38,6 +38,8 @@ hi SpellCap cterm=underline ctermfg=blue
 hi SpellRare cterm=underline ctermfg=blue
 set spellfile+=$HOME/.vim/dict.add
 
+set title " show file title top of xterm
+
 if version >= 703
     "available only in vim 7.3
     set relativenumber
