@@ -86,6 +86,7 @@ vnoremap <S-TAB> <
 noremap <Leader>w gqap
 
 set backspace=indent,eol,start
+set whichwrap+=<,>,[,],h,l
 
 autocmd FileType java,c iabbrev retrun return
 autocmd FileType java,c iabbrev retunr return
