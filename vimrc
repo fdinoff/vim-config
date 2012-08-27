@@ -40,10 +40,14 @@ set spellfile+=$HOME/.vim/dict.add
 
 set title " show file title top of xterm
 
-if version >= 703
-    "available only in vim 7.3
+if version >= 702
+    "available only in vim 7.2
     set relativenumber
     nnoremap <leader>r :set relativenumber!<CR>
+endif
+
+if version >= 703
+    "available only in vim 7.3
 
     set undofile
     set undodir=$HOME/.vim/vimundo
