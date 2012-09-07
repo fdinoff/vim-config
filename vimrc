@@ -173,12 +173,12 @@ colorscheme darkbone256
 
 if has("macunix")
     " yank to mac clipboard (for copy and paste)
-    nnoremap yy "*yy
-    vnoremap y "*y
+    nnoremap yy "*yyyy
+    vnoremap y "*ygvy
 elseif has("unix")
     " yank to linux clipboard (untested) (need to check register)
-    nnoremap yy "+yy
-    vnoremap y "+y
+    nnoremap yy "+yyyy
+    vnoremap y "+ygvy
 endif
 " this moves all changes to mac clipboard
 " I feel it does too much
