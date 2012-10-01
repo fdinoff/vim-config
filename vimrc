@@ -170,7 +170,9 @@ autocmd BufEnter ?akefile* set noet ts=8 sw=8 nocindent
 command Wq wq
 command W w
 
-colorscheme darkbone256
+if has("macunix")
+    colorscheme darkbone256
+endif
 
 if has("macunix")
     " yank to mac clipboard (for copy and paste)
@@ -178,8 +180,8 @@ if has("macunix")
     vnoremap y "*ygvy
 elseif has("unix")
     " yank to linux clipboard (untested) (need to check register)
-    nnoremap yy "+yyyy
-    vnoremap y "+ygvy
+"    nnoremap yy "+yyyy
+"    vnoremap y "+ygvy
 endif
 " this moves all changes to mac clipboard
 " I feel it does too much
