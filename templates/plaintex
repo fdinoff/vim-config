@@ -1,0 +1,15 @@
+\documentclass[12pt]{article}
+\usepackage{titling}
+
+\title{}
+\author{Frank Dinoff}
+\date{}
+
+\setlength{\droptitle}{-8em}
+\posttitle{\par\end{center}}
+
+\begin{document}
+
+\maketitle
+
+\end{document}
