@@ -177,8 +177,8 @@ colorscheme darkbone256
 
 if has("macunix")
     " yank to mac clipboard (for copy and paste)
-    nnoremap yy "*yyyy
-    vnoremap y "*ygvy
+    nnoremap yy yy"*yy
+    vnoremap y ygv"*y
 elseif has("unix")
     " yank to linux clipboard (untested) (need to check register)
     nnoremap yy "+yyyy
