@@ -73,6 +73,7 @@ hi javaParen2 ctermfg=white guifg=#0000ff
 "nnoremap <UP> (
 "nnoremap <DOWN> )
 
+"disable help
 noremap <F1> <NOP>
 
 "set wrap
@@ -158,10 +159,12 @@ autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-]>"
 
 autocmd BufReadPost *.rkt setlocal filetype=lisp
 
+" Restore cursor position in files
 autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
             \   exe "normal g`\"zt" |
             \ endif
+
 autocmd BufEnter ?akefile* set noet ts=8 sw=8 nocindent
 
 "set textwidth=80
