@@ -76,9 +76,9 @@ hi Pmenu	guibg=#202040 ctermbg=235
 hi PmenuSel	guibg=#404080 ctermbg=60 guifg=#a0a0c0 ctermfg=248
 hi PmenuSbar	guibg=#202040 ctermbg=235
 " Tab
-hi TabLine	guifg=#606080 ctermfg=60 guibg=black gui=underline
-hi TabLineFill	guifg=#a0a0c0 ctermfg=248 guibg=black gui=none
-hi TabLineSel	guifg=#c0c0ff ctermfg=147 guibg=#606080 ctermbg=60 gui=bold
+hi TabLine	guifg=#606080 ctermfg=60 guibg=black gui=underline ctermbg=black
+hi TabLineFill	guifg=#a0a0c0 ctermfg=248 guibg=black gui=none ctermfg=black
+hi TabLineSel	guifg=#c0c0ff ctermfg=147 guibg=#606080 ctermbg=60 gui=bold ctermbg=black
 endif
 
 hi SpellBad	cterm=underline ctermfg=red ctermbg=NONE
