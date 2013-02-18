@@ -114,7 +114,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 autocmd FileType c setlocal omnifunc=ccomplete#Complete
 
-autocmd BufReadPost *.txt setlocal textwidth=80
+autocmd BufReadPost *.txt,*.tex setlocal textwidth=80
 
 autocmd FileType c map <F3> :call CompileGcc()<CR>
 func! CompileGcc()
