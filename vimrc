@@ -175,6 +175,9 @@ command W w
 
 if has("macunix")
     colorscheme darkbone256
+elseif has("unix")
+    set t_Co=256
+    colorscheme darkbone256
 endif
 
 if has("macunix")
