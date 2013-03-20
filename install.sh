@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cd && ln -s .vimrc .vim/vimrc && ln -s .gvimrc .vim/gvimrc
+cd && ln -s .vim/vimrc .vimrc && ln -s .vim/gvimrc .gvimrc
