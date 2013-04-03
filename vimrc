@@ -95,11 +95,6 @@ set whichwrap+=<,>,[,],h,l
 
 autocmd FileType java,c iabbrev retrun return
 autocmd FileType java,c iabbrev retunr return
-autocmd FileType java iabbrev sop System.out.println
-autocmd FileType java iabbrev sof System.out.printf
-autocmd FileType java iabbrev psvm public static void main(String[] args){<CR><CR>}<UP><ESC>$
-
-autocmd FileType java iabbrev pritnln println
 autocmd FileType java,c iabbrev defualt default
 nnoremap <leader>a i/**<CR><SPACE>*<SPACE>Author<SPACE>Frank<SPACE>Dinoff<CR>*/<CR><BACKSPACE>
 
@@ -129,28 +124,6 @@ func! CompileRunGcc()
     exec "!gcc % && ./a.out"
     "exec /"! ./%<.out"
 endfunc
-
-autocmd FileType java map <F3> :call CompileJavac()<CR>
-func! CompileJavac()
-    exec "w"
-    exec "!javac %"
-endfunc
-
-autocmd FileType java map <F4> :call CompileRunJavac()<CR>
-func! CompileRunJavac()
-    exec "w"
-    exec "!javac % && java %<"
-endfunc
-
-"autocmd FileType java map <F7> <Plug>JavagetsetInsertBothGetterSetterj
-
-"autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-]>"
-"autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-u>"
-"autocmd FileType java let g:SuperTabDefaultCompletionType = "context"
-"autocmd FileType java set tags=$HOME/.vim/.tags
-"autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-"autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
 
 
 "autocmd VimEnter * silent !$HOME/bin/useFunctionKeys.sh &
