@@ -1,0 +1,43 @@
+# This variable contains the name of the executable
+# Change it to whatever you want. 
+OUTPUT_NAME := executable_name
+# dependency files are dropped in here.
+DEP_DIR := depend
+
+CC := gcc
+CFLAGS := -g -Wall
+CFLAGS += -Wextra
+
+SRC_FILES := $(wildcard *.c)
+OBJS := $(patsubst %.c,%.o,$(SRC_FILES))
+
+LDFLAGS := -lm
+
+$(OUTPUT_NAME):	$(OBJS)
+	$(LINK.c) -o $(OUTPUT_NAME) $(OBJS)
+
+$(DEP_DIR):
+	mkdir $(DEP_DIR)
+
+# This checks to see if headers change and recompiles
+# the code if necessary. This saves explicitly typing
+# out all the header files. This leaves behind .d files
+$(DEP_DIR)/%.d: %.c $(DEP_DIR)
+	@set -e; rm -f $@; \
+	$(CC) -MM $(CPPFLAGS) $< > $@.$$$$; \
+	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
+	rm -f $@.$$$$
+
+# include all .d files but ignore warning if they
+# are not there because everything needs to be
+# recompiled anyways.
+-include $(addprefix $(DEP_DIR)/,$(SRC_FILES:.c=.d))
+
+.PHONY: clean
+clean:		
+	rm -f $(OBJS)
+	rm -rf $(DEP_DIR) $(wildcard *.d *.d.*)
+
+.PHONY: distclean
+distclean: clean
+	rm -f $(OUTPUT_NAME)
