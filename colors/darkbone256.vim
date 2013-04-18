@@ -1,7 +1,7 @@
 " Name:		darkbone.vim
-" Maintainer:	Kojo Sugita
-" Last Change:	2008-11-22
-" Revision:	1.1
+" Maintainer:	Frank Dinoff
+" Last Change:	2013-04-18
+" Revision:	1.2
 set background=dark
 hi clear
 if exists("syntax_on")
