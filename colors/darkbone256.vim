@@ -72,7 +72,7 @@ hi SignColumn	guibg=#000000 ctermbg=0
 hi MatchParen	guifg=#a0a0c0 ctermfg=248 guibg=#404080 ctermbg=60 gui=none
 if version >= 700
 " Pmenu
-hi Pmenu	guibg=#202040 ctermbg=235
+hi Pmenu	guibg=#202040 ctermbg=241
 hi PmenuSel	guibg=#404080 ctermbg=60 guifg=#a0a0c0 ctermfg=248
 hi PmenuSbar	guibg=#202040 ctermbg=235
 " Tab
