@@ -101,13 +101,6 @@ nnoremap <leader>a i/**<CR><SPACE>*<SPACE>Author<SPACE>Frank<SPACE>Dinoff<CR>*/<
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 nnoremap <Leader>z :set spell!<CR> :if exists("g:syntax_on") <BAR> syntax off <BAR> else <BAR> syntax enable <BAR> endif <CR>
 
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
-autocmd FileType c setlocal omnifunc=ccomplete#Complete
 
 autocmd BufReadPost *.txt,*.tex setlocal textwidth=80
 
