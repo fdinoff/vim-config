@@ -5,6 +5,8 @@ filetype plugin indent on
 "colorscheme redblack
 "colorscheme darkbone
 
+call pathogen#infect()
+
 set mouse=a " use mouse in vim
 
 set sts=4
@@ -180,3 +182,5 @@ if &term =~ "xterm.*"
     cmap <Esc>[200~ <nop>
     cmap <Esc>[201~ <nop>
 endif
+
+nnoremap <F5> :GundoToggle<CR>
