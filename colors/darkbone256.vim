@@ -39,6 +39,7 @@ hi FoldColumn 	guifg=#a0a0c0 ctermfg=248 guibg=#102010 ctermbg=233
 hi Search 	guifg=#000000 ctermfg=0 guibg=#c0c0ff ctermbg=147 gui=none
 hi IncSearch 	guifg=#000000 ctermfg=0 guibg=#c0c0ff ctermbg=147 gui=none cterm=NONE
 hi LineNr 	guifg=#606080 ctermfg=60 guibg=#000000 ctermbg=0 gui=none
+hi CursorLineNr 	guifg=#606080 ctermfg=60 guibg=#000000 ctermbg=0 gui=none
 hi Question 	guifg=#a0a0c0 ctermfg=248 guibg=#000000 ctermbg=0
 "\n, \0, %d, %s, etc...
 " hi Special	guifg=#d0e080 guibg=#000000 gui=none
