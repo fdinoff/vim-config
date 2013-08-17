@@ -9,9 +9,9 @@ call pathogen#infect()
 
 set mouse=a " use mouse in vim
 
-set sts=4
+set softtabstop=4
 set shiftwidth=4
-set ts=4
+set tabstop=4
 set expandtab
 
 set linebreak " (lbr) wrap long lines at a space instead of in the middle of a word
