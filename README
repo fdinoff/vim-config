@@ -1,9 +1,8 @@
 This repository should reside inside ~/.vim
 
 Make sure to symlink the vimrc and gvimrc files to your home directory
-
-then run
-cd && ln -s .vimrc .vim/vimrc && ln -s .gvimrc .vim/gvimrc
+by running make. This is unnecessary if you are running vim 7.4 as the
+files are in the proper location.
 
 or if you want to continue having your own vimrc file add
 source $HOME/.vim/vimrc
