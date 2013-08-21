@@ -163,7 +163,7 @@ endif
 
 function! MyBufEnter()
     " don't (re)store filepos for git commit message files
-    if &filetype == "gitcommit"
+    if &filetype =~ "git.*"
         call setpos('.', [0, 1, 1, 0])
     endif
 endfunction
