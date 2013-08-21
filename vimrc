@@ -138,8 +138,8 @@ autocmd BufEnter ?akefile* set noet ts=8 sw=8 nocindent
 "set textwidth=80
 
 " remap accidental Shifts
-command Wq wq
-command W w
+command! Wq wq
+command! W w
 
 if has("macunix")
     colorscheme darkbone256
@@ -161,7 +161,7 @@ endif
 " I feel it does too much
 " set clipboard=unnamed
 
-function MyBufEnter()
+function! MyBufEnter()
     " don't (re)store filepos for git commit message files
     if &filetype == "gitcommit"
         call setpos('.', [0, 1, 1, 0])
@@ -172,7 +172,7 @@ au BufEnter * call MyBufEnter()
 if &term =~ "xterm.*"
     let &t_ti = &t_ti . "\e[?2004h"
     let &t_te = "\e[?2004l" . &t_te
-    function XTermPasteBegin(ret)
+    function! XTermPasteBegin(ret)
         set pastetoggle=<Esc>[201~
         set paste
         return a:ret
