@@ -1,9 +1,6 @@
 set nocompatible
 let mapleader=","
 filetype plugin indent on
-"colorscheme desert
-"colorscheme redblack
-"colorscheme darkbone
 
 call pathogen#infect()
 
@@ -19,7 +16,6 @@ set linebreak " (lbr) wrap long lines at a space instead of in the middle of a w
 "set exrc            " enable per-directory .vimrc files
 "set secure          " disable unsafe commands in local .vimrc files
 
-"set background=dark
 syntax on
 set autoindent
 set incsearch
@@ -121,10 +117,6 @@ func! CompileRunGcc()
 endfunc
 
 
-"autocmd VimEnter * silent !$HOME/bin/useFunctionKeys.sh &
-"autocmd VimLeave * silent !$HOME/bin/useSpecialKeys.sh &
-"autocmd VimLeave * !open -a Terminal
-
 autocmd BufReadPost *.rkt setlocal filetype=lisp
 
 " Restore cursor position in files
@@ -134,8 +126,6 @@ autocmd BufReadPost *
             \ endif
 
 autocmd BufEnter ?akefile* set noet ts=8 sw=8 nocindent
-
-"set textwidth=80
 
 " remap accidental Shifts
 command! Wq wq
