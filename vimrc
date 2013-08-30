@@ -174,3 +174,5 @@ if &term =~ "xterm.*"
 endif
 
 nnoremap <F5> :GundoToggle<CR>
+
+set cinoptions+=l1,g0,t0,(0,N-s
