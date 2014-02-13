@@ -38,8 +38,7 @@ set spellfile+=$HOME/.vim/dict.add
 
 set title " show file title top of xterm
 
-if version >= 702
-    "available only in vim 7.2
+if exists('+relativenumber')
     set relativenumber
     nnoremap <leader>r :set relativenumber!<CR>
 endif
