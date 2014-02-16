@@ -13,3 +13,6 @@
 [submodule "bundle/AutoTag"]
 	path = bundle/AutoTag
 	url = https://github.com/vim-scripts/AutoTag
+[submodule "bundle/sql_iabbr"]
+	path = bundle/sql_iabbr
+	url = https://github.com/vim-scripts/sql_iabbr.vim.git
