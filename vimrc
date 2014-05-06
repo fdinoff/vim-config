@@ -124,7 +124,7 @@ autocmd BufReadPost *
             \   exe "normal g`\"zt" |
             \ endif
 
-autocmd BufEnter ?akefile* set noet ts=8 sw=8 nocindent
+autocmd FileType make setlocal noet ts=8 sw=8 nocindent
 
 " remap accidental Shifts
 command! Wq wq
