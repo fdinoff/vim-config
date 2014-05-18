@@ -80,6 +80,8 @@ noremap <F1> <NOP>
 
 nnoremap j gj
 nnoremap k gk
+nnoremap gj j
+nnoremap gk k
 
 vnoremap <TAB> >
 vnoremap <S-TAB> <
