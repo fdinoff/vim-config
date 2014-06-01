@@ -12,7 +12,7 @@ endfunc
 
 iabbrev <buffer> sop System.out.println
 iabbrev <buffer> sof System.out.printf
-iabbrev <buffer> psvm public static void main(String[] args){<CR><CR>}<UP><ESC>$
+iabbrev <buffer> psvm public static void main(String[] args) {<CR><CR>}<UP><ESC>$
 
 iabbrev <buffer> pritnln println
 
