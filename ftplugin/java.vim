@@ -10,11 +10,11 @@ func! CompileRunJavac()
     exec "!javac % && java %<"
 endfunc
 
-iabbrev sop System.out.println
-iabbrev sof System.out.printf
-iabbrev psvm public static void main(String[] args){<CR><CR>}<UP><ESC>$
+iabbrev <buffer> sop System.out.println
+iabbrev <buffer> sof System.out.printf
+iabbrev <buffer> psvm public static void main(String[] args){<CR><CR>}<UP><ESC>$
 
-iabbrev pritnln println
+iabbrev <buffer> pritnln println
 
 "autocmd FileType java map <F7> <Plug>JavagetsetInsertBothGetterSetterj
 
