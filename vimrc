@@ -78,6 +78,9 @@ noremap <F1> <NOP>
 "set formatoptions=qrn1
 "set colorcolumn=85
 
+" Remove comment leader when joining lines
+set formatoptions+=j
+
 nnoremap j gj
 nnoremap k gk
 nnoremap gj j
