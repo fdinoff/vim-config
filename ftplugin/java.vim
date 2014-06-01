@@ -16,12 +16,12 @@ iabbrev <buffer> psvm public static void main(String[] args){<CR><CR>}<UP><ESC>$
 
 iabbrev <buffer> pritnln println
 
-"autocmd FileType java map <F7> <Plug>JavagetsetInsertBothGetterSetterj
+"map <F7> <Plug>JavagetsetInsertBothGetterSetterj
 
-"autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-]>"
-"autocmd FileType java let g:SuperTabDefaultCompletionType = "<C-X><C-u>"
-"autocmd FileType java let g:SuperTabDefaultCompletionType = "context"
-"autocmd FileType java set tags=$HOME/.vim/.tags
-"autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-"autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+"let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+"let g:SuperTabDefaultCompletionType = "<C-X><C-]>"
+"let g:SuperTabDefaultCompletionType = "<C-X><C-u>"
+"let g:SuperTabDefaultCompletionType = "context"
+"set tags=$HOME/.vim/.tags
+"setlocal omnifunc=javacomplete#Complete
+"setlocal completefunc=javacomplete#CompleteParamsInfo
