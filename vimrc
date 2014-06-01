@@ -182,3 +182,5 @@ nnoremap <F5> :GundoToggle<CR>
 noremap <F8> :TagbarToggle<CR>
 
 set cinoptions+=l1,g0,t0,(0,N-s
+
+set hidden
