@@ -160,3 +160,7 @@ noremap <F8> :TagbarToggle<CR>
 set cinoptions+=l1,g0,t0,(0,N-s
 
 set hidden
+
+if filereadable(expand("$HOME/.vimrc.local"))
+    source $HOME/.vimrc.local
+endif
