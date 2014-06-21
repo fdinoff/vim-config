@@ -1,14 +1,14 @@
-map <F3> :call CompileJavac()<CR>
-func! CompileJavac()
+nnoremap <F3> :call CompileJavac()<CR>
+function! CompileJavac()
     exec "w"
     exec "!javac %"
-endfunc
+endfunction
 
-map <F4> :call CompileRunJavac()<CR>
-func! CompileRunJavac()
+nnoremap <F4> :call CompileRunJavac()<CR>
+function! CompileRunJavac()
     exec "w"
     exec "!javac % && java %<"
-endfunc
+endfunction
 
 iabbrev <buffer> sop System.out.println
 iabbrev <buffer> sof System.out.printf
