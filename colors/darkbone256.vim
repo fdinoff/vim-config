@@ -1,7 +1,7 @@
 " Name:		darkbone.vim
 " Maintainer:	Frank Dinoff
-" Last Change:	2013-04-18
-" Revision:	1.2
+" Last Change:	2014-06-21
+" Revision:	1.3
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -82,7 +82,7 @@ hi TabLineFill	guifg=#a0a0c0 ctermfg=248 guibg=black gui=none ctermfg=black
 hi TabLineSel	guifg=#c0c0ff ctermfg=147 guibg=#606080 ctermbg=60 gui=bold ctermbg=black
 endif
 
-hi SpellBad	cterm=underline ctermfg=red ctermbg=NONE
-hi SpellCap	cterm=underline ctermfg=blue ctermbg=NONE
-hi SpellRare	cterm=underline ctermfg=blue ctermbg=NONE
+hi SpellBad	cterm=underline ctermfg=160 ctermbg=NONE
+hi SpellCap	cterm=underline ctermfg=69 ctermbg=NONE
+hi SpellRare	cterm=underline ctermfg=69 ctermbg=NONE
 " vim:set ts=8 sts=2 sw=2 tw=0:

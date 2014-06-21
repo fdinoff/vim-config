@@ -28,12 +28,6 @@ nnoremap <leader>h :set hlsearch!<CR>
 set ruler
 
 set spell
-hi clear SpellBad
-hi clear SpellCap
-hi clear SpellRare
-hi SpellBad cterm=underline ctermfg=red
-hi SpellCap cterm=underline ctermfg=blue
-hi SpellRare cterm=underline ctermfg=blue
 set spellfile+=$HOME/.vim/dict.add
 
 set title " show file title top of xterm
