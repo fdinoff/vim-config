@@ -99,7 +99,7 @@ autocmd FileType java,c iabbrev retunr return
 autocmd FileType java,c iabbrev defualt default
 nnoremap <leader>a i/**<CR><SPACE>*<SPACE>Author<SPACE>Frank<SPACE>Dinoff<CR>*/<CR><BACKSPACE>
 
-nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+nnoremap <Leader>c :exec 'set' (&colorcolumn ==# '') ? 'colorcolumn=+1' : 'colorcolumn='<CR>
 nnoremap <Leader>z :set spell!<CR> :if exists("g:syntax_on") <BAR> syntax off <BAR> else <BAR> syntax enable <BAR> endif <CR>
 
 
