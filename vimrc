@@ -43,16 +43,15 @@ if exists('+relativenumber')
     nnoremap <leader>r :set relativenumber!<CR>
 endif
 
-if version >= 703
-    "available only in vim 7.3
-
+if has('persistent_undo')
     set undofile
     set undodir=$HOME/.vim/vimundo
-    set history=500
-
-    set backup
-    set backupdir=$HOME/.vim/backup//
 endif
+
+set history=500
+
+set backup
+set backupdir=$HOME/.vim/backup//
 
 set directory=$HOME/.vim/vimswp//,$HOME/tmp//,/var/tmp//,/tmp//,.
 
