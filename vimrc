@@ -105,8 +105,6 @@ nnoremap <Leader>z :set spell!<CR> :if exists("g:syntax_on") <BAR> syntax off <B
 
 autocmd BufReadPost *.txt,*.tex setlocal textwidth=80
 
-autocmd BufReadPost *.rkt setlocal filetype=lisp
-
 " Restore cursor position in files
 autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
