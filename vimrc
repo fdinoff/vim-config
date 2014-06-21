@@ -105,21 +105,6 @@ nnoremap <Leader>z :set spell!<CR> :if exists("g:syntax_on") <BAR> syntax off <B
 
 autocmd BufReadPost *.txt,*.tex setlocal textwidth=80
 
-autocmd FileType c map <F3> :call CompileGcc()<CR>
-func! CompileGcc()
-    exec "w"
-    "exec /"!gcc % -o %<.out" remove /
-    exec "!gcc %"
-endfunc
-
-autocmd FileType c map <F4> :call CompileRunGcc()<CR>
-func! CompileRunGcc()
-    exec "w"
-    exec "!gcc % && ./a.out"
-    "exec /"! ./%<.out"
-endfunc
-
-
 autocmd BufReadPost *.rkt setlocal filetype=lisp
 
 " Restore cursor position in files
