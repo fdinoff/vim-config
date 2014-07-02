@@ -71,8 +71,10 @@ noremap <F1> <NOP>
 "set formatoptions=qrn1
 "set colorcolumn=85
 
-" Remove comment leader when joining lines
-set formatoptions+=j
+if v:version > 703 || v:version == 703 && has("patch541")
+    " Remove comment leader when joining lines
+    set formatoptions+=j
+endif
 
 nnoremap j gj
 nnoremap k gk
