@@ -4,12 +4,8 @@ Make sure to symlink the vimrc and gvimrc files to your home directory
 by running make. This is unnecessary if you are running vim 7.4 as the
 files are in the proper location.
 
-or if you want to continue having your own vimrc file add
-source $HOME/.vim/vimrc
-to the end of .vimrc
-and add
-source $HOME/.vim/gvimrc
-to the end of .gvimrc
+It is recommended to create your own vim configuration rather than using
+someone else's.
 
 vimundo, vimswp, and backup are empty directories. These directories will
 fill up with undo history files, swp files and backup files.
