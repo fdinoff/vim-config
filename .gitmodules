@@ -35,3 +35,6 @@
 [submodule "bundle/file-line"]
 	path = bundle/file-line
 	url = https://github.com/bogado/file-line.git
+[submodule "bundle/vim-argumentative"]
+	path = bundle/vim-argumentative
+	url = https://github.com/PeterRincker/vim-argumentative
