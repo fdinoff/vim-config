@@ -141,6 +141,8 @@ function! MyBufEnter()
 endfunction
 au BufEnter * call MyBufEnter()
 
+set tags=./tags;
+
 if &term =~ "xterm.*"
     let &t_ti = &t_ti . "\e[?2004h"
     let &t_te = "\e[?2004l" . &t_te
