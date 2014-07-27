@@ -34,7 +34,6 @@ set title " show file title top of xterm
 
 if exists('+relativenumber')
     set relativenumber
-    nnoremap <leader>r :set relativenumber!<CR>
 endif
 
 if has('persistent_undo')
