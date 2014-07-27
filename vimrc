@@ -142,6 +142,7 @@ endfunction
 au BufEnter * call MyBufEnter()
 
 set tags=./tags;
+set autochdir
 
 if &term =~ "xterm.*"
     let &t_ti = &t_ti . "\e[?2004h"
