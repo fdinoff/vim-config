@@ -165,6 +165,9 @@ set cinoptions+=l1,g0,t0,(0,N-s
 
 set hidden
 
+set wildmenu
+set wildmode=longest,list:longest
+
 if filereadable(expand("$HOME/.vimrc.local"))
     source $HOME/.vimrc.local
 endif
