@@ -38,3 +38,6 @@
 [submodule "bundle/vim-argumentative"]
 	path = bundle/vim-argumentative
 	url = https://github.com/PeterRincker/vim-argumentative
+[submodule "bundle/vim-sleuth"]
+	path = bundle/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
