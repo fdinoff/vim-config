@@ -1,3 +1,11 @@
+function! ftplugin#java#CorrectJavaImport()
+    if expand('<cword>')[0] =~# '^[a-z]$'
+        JavaStaticImport
+    else
+        JavaImport
+    endif
+endfunction
+
 function! ftplugin#java#JavaGetTestFilename()
     let l:filename = expand('%:p')
     let l:filename = substitute(
