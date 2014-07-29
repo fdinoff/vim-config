@@ -1,3 +1,26 @@
+function! ftplugin#java#JavaStaticImport(...)
+    if a:0
+        let l:name = a:1
+    else
+        let l:name = expand('<cword>')
+    endif
+
+    let l:winview = winsaveview()
+    let l:imports = systemlist('find-static-import.sh ' . l:name)
+    if len(l:imports)
+        if len(l:imports) == 1
+            let l:choice = l:imports[0]
+        elseif len(l:imports) > 1
+            let l:choice = eclim#java#import#ImportPrompt(l:imports)
+        endif
+        call append(2, l:choice)
+        call SortStaticImports()
+    else
+        echoerr 'No import for' l:name 'found'
+    endif
+    call winrestview(l:winview)
+endfunction
+
 function! ftplugin#java#SortStaticImports()
     let l:winview = winsaveview()
     call cursor(0,0)
